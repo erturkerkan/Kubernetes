@@ -1,11 +1,11 @@
 apiVersion: apps/v1
-kind: ReplicaSet
+kind: Deployment
 metadata:
-  name: merhaba-dunya-replicaset
+  name: merhaba-dunya-deploy
   labels:
     name: Merhaba-dunya
 spec:
-  replicas: 3
+  replicas: 1
   selector:
     matchLabels:
       name: Merhaba-dunya
